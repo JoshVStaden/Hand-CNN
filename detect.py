@@ -60,7 +60,7 @@ def color_white(image, mask, angle):
 def load_model_custom(config):
 
     model = modellib.MaskRCNN(mode="inference", config=config, model_dir='./model')
-    model.load_weights('./model/trained_model.h5', by_name=True)
+    model.load_weights('./model/mask_rcnn_coco.h5', by_name=True)
 
     return model
 
